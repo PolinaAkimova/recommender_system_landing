@@ -1,0 +1,146 @@
+
+.slider {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__arrow-left, .slider__arrow-right {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1002;
+}
+
+.slider__arrow-left {
+    left: 0;
+}
+
+.slider__arrow-right {
+    transform: rotate(180deg);
+    right: 0;
+}
+
+.slider__arrow-container {
+    width: 15px;
+    height: 30px;
+}
+
+.slider__arrow-container:hover, .slider__dot:hover {
+    filter: brightness(60%);
+}
+
+.slider__arrow-top, .slider__arrow-bottom {
+    width: 21px;
+    /*border-bottom: 3px solid;*/
+    /*border-image-slice: 1;*/
+    /*border-image-source: linear-gradient(to right, rgba(4, 155, 236, 1), rgba(213, 0, 91, 1));*/
+    border-bottom: 3px solid white;
+    position: relative;
+    left: -3px;
+    cursor: pointer;
+}
+
+.slider__arrow-top {
+    top: 6px;
+    transform: rotate(-45deg);
+}
+
+.slider__arrow-bottom {
+    top: 17px;
+    transform: rotate(45deg);
+}
+
+.slider__container {
+    width: 2400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+}
+
+.slider__item {
+    width: 600px;
+    height: 400px;
+}
+
+/*.slider:hover .slider__container {*/
+/*    transform: translateX(-600px);*/
+/*}*/
+
+.slide1 {
+    background-image: url("../images/data_scientist.jpg");
+}
+
+.slide2 {
+    background-image: url("../images/frontend_developer.jpg");
+}
+
+.slide3 {
+    background-image: url("../images/backend_developer.jpg");
+}
+
+.slide4 {
+    background-image: url("../images/devops.jpeg");
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+    background-size: cover;
+}
+
+.slider__dot-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 70px);
+}
+
+.slider__dot {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 450px;
+    }
+
+    .slider__container {
+        width: 1800px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slider__item {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 520px) {
+    .slider {
+        width: 270px;
+    }
+
+    .slider__container {
+        width: 1080px;
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slider__item {
+        width: 270px;
+        height: 180px;
+    }
+}

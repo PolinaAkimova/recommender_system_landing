@@ -1,0 +1,32 @@
+
+.architecture {
+    width: 100%;
+    padding: 40px 10vw 80px 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.architecture__container {
+    width: calc(100% - 600px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 70px 20px 40px;
+}
+
+.title[data-architecture] {
+    padding-top: 60px;
+}
+
+@media (max-width: 1148px) {
+    .architecture {
+        padding: 10px 10vw 80px 10vw;
+    }
+
+    .architecture__container {
+        width: auto;
+        padding: 0 0 40px 0;
+    }
+}

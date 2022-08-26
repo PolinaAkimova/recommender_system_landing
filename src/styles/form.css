@@ -1,0 +1,119 @@
+
+
+.form {
+    width: 100%;
+    padding: 50px 0 80px 0;
+}
+
+.form__sep {
+    width: 30%;
+    margin: 25px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 0 5px rgba(50, 50, 50, .6);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.form__info {
+    width: 450px;
+    padding: 50px 40px;
+}
+
+.form, .form__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__item-container {
+    width: 100%;
+    position: relative;
+}
+
+.form__item {
+    height: 45px;
+    border-radius: 27.5px;
+    padding-left: 15px;
+}
+
+.form__textarea {
+    height: 125px;
+    border-radius: 15px;
+    padding: 5px 5px 5px 15px;
+    resize: vertical;
+    max-height: 200px;
+    min-height: 100px;
+}
+
+.form__item, .form__textarea {
+    width: 100%;
+    border: 1.2px solid rgb(34, 101, 163);
+    color: rgb(34, 101, 163);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form__item:focus, .form__textarea:focus {
+    outline: none;
+    border: 1.2px solid rgb(155, 76, 146);
+}
+
+.form__error {
+    outline: none;
+    border: 1.2px solid red;
+}
+
+.form__error-text {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: red;
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    padding: 0 3px;
+}
+
+.form__img {
+    width: calc(70vw - 450px);
+    min-height: 500px;
+    min-width: 200px;
+    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .8)), url("../images/banner_image.jpg") center;
+}
+
+@media (max-width: 768px) {
+    .form__img {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .form__info {
+        width: 90vw;
+        padding: 35px 25px;
+    }
+
+    .form__item {
+        height: 40px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .form__textarea {
+        height: 110px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+}

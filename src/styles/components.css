@@ -1,0 +1,80 @@
+
+.components {
+    width: 100%;
+}
+.components__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.components__item {
+    width: 33.33%;
+    height: 250px;
+}
+
+.components__item:hover {
+    box-shadow: inset 20em 20em 17em -17em rgba(34, 101, 163, .85), inset -20em -20em 17em -17em rgba(103, 0, 31, .85);
+}
+
+.scientist {
+    background-image: url("../images/data_scientist.jpg");
+}
+
+.frontend {
+    background-image: url("../images/frontend_developer.jpg");
+}
+
+.backend {
+    background-image: url("../images/backend_developer.jpg");
+}
+
+.devops {
+    background-image: url("../images/devops.jpeg");
+}
+
+.mlops {
+    background-image: url("../images/mlops.jpg");
+}
+
+.leader {
+    background-image: url("../images/team_leader.jpg");
+}
+
+.scientist, .frontend, .backend, .devops, .mlops, .leader {
+    background-position: center;
+    background-size: cover;
+}
+
+.components__title {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+
+.components__item:hover .components__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: brightness(95%) contrast(120%) blur(3px);
+}
+
+@media (max-width: 768px) {
+    .components__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 520px) {
+    .components__item {
+        width: 100%;
+    }
+}

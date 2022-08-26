@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/style.css">
+    <title>RecSys Rent Service</title>
+</head>
+<body>
+
+    <div class="modal modal-start">
+        <div class="modal__container modal__container-hide">
+            <div class="modal__cross">
+                <div class="modal__cross-left"></div>
+                <div class="modal__cross-right"></div>
+            </div>
+            <div class="form__container">
+                <form class="form__info" method="post">
+                    <div class="subtitle">Have any ideas? Write here</div>
+                    <div class="form__item-container">
+                        <input class="form__item" type="text" name="name" placeholder="Name">
+                        <div class="form__error-text hidden"></div>
+                    </div>
+                    <div class="form__item-container">
+                        <input class="form__item" type="text" name="surname" placeholder="Surname">
+                        <div class="form__error-text hidden"></div>
+                    </div>
+                    <div class="form__item-container">
+                        <input class="form__item" type="text" name="email" placeholder="Email">
+                        <div class="form__error-text hidden"></div>
+                    </div>
+                    <div class="form__item-container">
+                        <textarea class="form__textarea" name="question" placeholder="Your suggestion"></textarea>
+                        <div class="form__error-text hidden"></div>
+                    </div>
+                    <input class="button" data-modal type="submit" value="Send">
+                </form>
+                <div class="form__img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__frame">
+        <div class="header">
+            <div class="header__icon-container">
+                <div class="header__cross hidden">
+                    <div class="header__cross-left"></div>
+                    <div class="header__cross-right"></div>
+                </div>
+                <div class="header__list hidden">
+                    <div class="header__list-item"></div>
+                    <div class="header__list-item" data-list="middle"></div>
+                    <div class="header__list-item"></div>
+                </div>
+            </div>
+            <div class="header__item">System</div>
+            <div class="header__item">Components</div>
+            <div class="header__item">Architecture</div>
+            <div class="header__item">Development</div>
+            <div class="header__item">Feedback</div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner__title">Recommender system rent service</div>
+        <div class="banner__text">Simple, fast and economical way to improve your business</div>
+        <input class="button" type="submit" value="Get started">
+    </div>
+
+    <div class="relevance" data-system>
+        <div class="title">Why are we doing this?</div>
+        <div class="subtitle">The problem in e-commerce and the relevance of the project</div>
+        <div class="separate"></div>
+        <div class="text">
+            Nowadays a significant share of trade moves to the Internet, and small shops faces several issues.
+            The most important of them are increasing competition, impossibility of personal communication with client
+            and too wide selection.
+        </div>
+        <div class="text">
+            One of the most productive ways to solve the problem is to implement recommendation system to website.
+        </div>
+        <div class="text">
+            But development of such system is overpriced and requires considerable time.
+            Our project allows small online shops to rent recommendation system, save time and money.
+        </div>
+    </div>
+
+    <div class="components" data-components>
+        <div class="components__container">
+            <div class="components__item scientist">
+                <div class="components__title">Data scientist</div>
+            </div>
+            <div class="components__item frontend">
+                <div class="components__title">Frontend developer</div>
+            </div>
+            <div class="components__item backend">
+                <div class="components__title">Backend developer</div>
+            </div>
+            <div class="components__item devops">
+                <div class="components__title">DevOps</div>
+            </div>
+            <div class="components__item mlops">
+                <div class="components__title">MLOps</div>
+            </div>
+            <div class="components__item leader">
+                <div class="components__title">Team Leader</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title" data-architecture>Architecture of the recommender module</div>
+    <div class="architecture">
+        <div class="architecture__container">
+            <div class="subtitle">Preprocessing</div>
+            <div class="separate"></div>
+            <div class="text">
+                To perform preprocessing, we can clean up text and image information, encode categorical
+                features and scale the result.
+                <br><br>
+                The picture depicts the example of text and image information.
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider__arrow-left">
+                <div class="slider__arrow-container">
+                    <div class="slider__arrow-top"></div>
+                    <div class="slider__arrow-bottom"></div>
+                </div>
+            </div>
+            <div class="slider__arrow-right">
+                <div class="slider__arrow-container">
+                    <div class="slider__arrow-top"></div>
+                    <div class="slider__arrow-bottom"></div>
+                </div>
+            </div>
+            <div class="slider__container">
+                <div class="slider__item slide1"></div>
+                <div class="slider__item slide2"></div>
+                <div class="slider__item slide3"></div>
+                <div class="slider__item slide4"></div>
+            </div>
+            <div class="slider__dot-container">
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timer" data-development>
+        <div class="title timer__title">The time left until graduation</div>
+        <div class="timer__container">
+            <div class="days">35</div>
+            <span>:</span>
+            <div class="hours">12</div>
+            <span>:</span>
+            <div class="minutes">55</div>
+        </div>
+    </div>
+
+    <div class="form" data-feedback>
+        <div class="title">Have questions? Contact us</div>
+        <div class="separate form__sep"></div>
+        <div class="form__container">
+            <form class="form__info" method="post">
+                <div class="subtitle">Fill in the details</div>
+                <div class="form__item-container">
+                    <input class="form__item" type="text" name="name" placeholder="Name">
+                    <div class="form__error-text hidden"></div>
+                </div>
+                <div class="form__item-container">
+                    <input class="form__item" type="text" name="surname" placeholder="Surname">
+                    <div class="form__error-text hidden"></div>
+                </div>
+                <div class="form__item-container">
+                    <input class="form__item" type="text" name="email" placeholder="Email">
+                    <div class="form__error-text hidden"></div>
+                </div>
+                <div class="form__item-container">
+                    <textarea class="form__textarea" name="question" placeholder="Question"></textarea>
+                    <div class="form__error-text hidden"></div>
+                </div>
+                <input class="button" type="submit" value="Send">
+            </form>
+            <div class="form__img"></div>
+        </div>
+    </div>
+
+<script src="dist/js/bundle.js"></script>
+
+<!--<script src="script.js" type="module"></script>-->
+<!--<script src="src/scripts/modal.js" type="module"></script>-->
+<!--<script src="src/scripts/header.js" type="module"></script>-->
+<!--<script src="src/scripts/slider.js" type="module"></script>-->
+<!--<script src="src/scripts/timer.js" type="module"></script>-->
+<!--<script src="src/scripts/request.js" type="module"></script>-->
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background: rgba(50, 50, 50, .6);
+    z-index: 1005;
+    position: fixed;
+}
+
+.modal-start {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.modal-show {
+    animation-duration: .3s;
+    animation-name: modalShow;
+}
+
+@keyframes modalShow {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.modal-hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+    animation-duration: .3s;
+    animation-name: modalHide;
+}
+
+@keyframes modalHide {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.modal__container {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+}
+
+.modal__container-show {
+    top: calc(50vh - 335px);
+    animation-duration: .5s;
+    animation-name: modalContainerShow;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes modalContainerShow {
+     from {
+         top: -620px;
+     }
+
+     to {
+         top: calc(50vh - 335px);
+     }
+ }
+
+.modal__container-hide {
+    top: -620px;
+    animation-duration: .5s;
+    animation-name: modalContainerHide;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes modalContainerHide {
+     from {
+         top: calc(50vh - 335px);
+     }
+
+     to {
+         top: -620px;
+     }
+ }
+
+.modal__cross {
+    width: 40px;
+    height: 40px;
+    background: rgba(165, 165, 165, .9);
+    border-radius: 20px;
+    opacity: .5;
+    position: relative;
+    top: 50px;
+    left: calc(70vw - 35px);
+    cursor: pointer;
+}
+
+.modal__cross:hover {
+    opacity: 1;
+}
+
+.modal__cross-left, .modal__cross-right {
+    width: 24px;
+    border-bottom: 2px solid #ddd;
+    position: absolute;
+    top: 19px;
+    left: 8px;
+}
+
+.modal__cross-left {
+    transform: rotate(45deg);
+}
+
+.modal__cross-right {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .modal__container {
+        left: 20%;
+        right: 20%;
+    }
+
+    .modal__cross {
+        top: 50px;
+        left: calc(60vw - 35px);
+        background: #ddd;
+    }
+
+    .modal__cross-left, .modal__cross-right {
+        border-bottom: 2px solid rgb(165, 165, 165);
+    }
+}
+
+@media (max-width: 520px) {
+    .modal__container {
+        left: 5%;
+        right: 5%;
+    }
+
+    .modal__cross {
+        left: calc(90vw - 35px);
+    }
+}

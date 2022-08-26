@@ -1,0 +1,302 @@
+{
+  "dev_info": [
+    {
+      "subtitle": "Preprocessing",
+      "text": "To perform preprocessing, we can clean up text and image information, encode categorical features and scale the result. <br><br> The picture depicts the example of text and image preprocessing."
+    },
+    {
+      "subtitle": "Making embeddings",
+      "text": "The next step is to translate them to latent space with embeddings. <br><br> To do it, we can use an autoencoder for images and word2vec model for texts <br><br> The image on right shows learning process of autoencoder."
+    },
+    {
+      "subtitle": "Building the model",
+      "text": "Recommendation model can be built on memory-based approach, Latent Factor Model or Factorization Machine. <br><br> In this project Factorisation Machine was chosen because of its effectiveness and convenience. <br><br> An example of matrix factorization you can see on the slide."
+    },
+    {
+      "subtitle": "Evaluation",
+      "text": "Both offline and online metrics should be measured to release recommendation system. <br><br> First group evaluates the development stage, second group - on application stage. <br><br> The picture describes simple A/B-test case as on of online metrics."
+    }
+  ],
+  "feedback": [
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sdfghj",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "qwerty",
+      "surname": "qwerty",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "ertyu",
+      "id": 3
+    },
+    {
+      "name": "qwert",
+      "surname": "wertyu",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "wertyui",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "ertyertye",
+      "id": 11
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "qwertyu",
+      "id": 12
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "dyhshd",
+      "id": 13
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "dghjdfgjfghjf",
+      "id": 14
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sfdhshfsdhf",
+      "id": 15
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "zdkjfhg;adkhg;sghfd",
+      "id": 16
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "asdfghjkl",
+      "id": 17
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "dyjdtyjtjj",
+      "id": 18
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "srsgstgsg",
+      "id": 19
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "dfhgdhdfghdh",
+      "id": 20
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "dfgshdth",
+      "id": 21
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "rtshsrthrh",
+      "id": 22
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "drgsdg",
+      "id": 23
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "fghjkl;",
+      "id": 24
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "cv xcbxbvcbxcvbxcbxb",
+      "id": 25
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sgfdgsdhgdsffgdsgfgjhfgjfgjfjfgjfjfg",
+      "id": 26
+    },
+    {
+      "name": "dsfgsdfg",
+      "surname": "sdfgsdfgsd",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sdfgsdfgdfg",
+      "id": 27
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "adgsdfgfsdfggfgd",
+      "id": 28
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "ktd",
+      "id": 29
+    },
+    {
+      "name": ";jk",
+      "surname": ";kjh",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "qwertyu",
+      "id": 30
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "qqwerty",
+      "id": 31
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sdfgsdgfsg",
+      "id": 32
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sfgsfgsfg",
+      "id": 33
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "wersrgrgt",
+      "id": 34
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sdfgsdfgsdfg",
+      "id": 35
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sdfgsdfgsg",
+      "id": 36
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "sdfgsdfgsdg",
+      "id": 37
+    },
+    {
+      "name": "aerwr",
+      "surname": "werwet",
+      "email": "wert@W.RU",
+      "question": "ertyery",
+      "id": 38
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "dfhdfhdfh",
+      "id": 39
+    },
+    {
+      "name": "Polina A.",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "zdsfsdfsdgsfgsfg",
+      "id": 40
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "cghmdmhd",
+      "id": 41
+    },
+    {
+      "name": "mhfgkf",
+      "surname": "gfshsr",
+      "email": "polinaakimova110900@gmail.com",
+      "question": ",jh,jfjfhg",
+      "id": 42
+    },
+    {
+      "name": "name",
+      "surname": "fghj",
+      "email": "polinaakimova110900@gmail.com",
+      "question": "ghdgyjtyjrtyjtjrjy",
+      "id": 43
+    },
+    {
+      "name": "name",
+      "surname": "WERTYU",
+      "email": "polinaakimova110900@gmail.com",
+      "question": ",/.l,kmjhg",
+      "id": 44
+    }
+  ]
+}

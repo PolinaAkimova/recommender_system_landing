@@ -1,0 +1,43 @@
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(103, 0, 31, .9), rgba(34, 101, 163, 0.8)), url("../images/banner_image.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 50px 0 50px;
+}
+
+.banner__title, .banner__text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.banner__title {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.banner__text {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .banner__title {
+        font-size: 36px;
+    }
+
+    .banner__text {
+        font-size: 14px;
+    }
+}

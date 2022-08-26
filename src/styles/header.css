@@ -1,0 +1,130 @@
+
+.header__frame {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    transition: .3s;
+    z-index: 1003;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    top: 0;
+    left: 0;
+}
+
+.header__item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header__item:hover, .hovered {
+    border-bottom: 1.2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, rgba(4, 155, 236, 1), rgba(213, 0, 91, 1));
+}
+
+.header__icon-container {
+    width: 100%;
+    display: none;
+}
+
+.header__cross {
+    width: 60px;
+    height: 60px;
+    background: white;
+}
+
+.header__cross-left {
+    transform: rotate(45deg);
+}
+
+.header__cross-right {
+    transform: rotate(-45deg);
+}
+
+.header__cross-left, .header__cross-right {
+    width: 50px;
+    position: fixed;
+    top: 28px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.header__list {
+    width: 40px;
+    height: 60px;
+    background: white;
+    padding: 15px 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.header__list-item {
+    width: 40px;
+}
+
+.header__cross-left, .header__cross-right, .header__list-item {
+     border-bottom: 3px solid;
+     border-image-slice: 1;
+     border-image-source: linear-gradient(to right, rgba(4, 155, 236, 1), rgba(213, 0, 91, 1));
+ }
+
+.header__list-item[data-list="middle"] {
+    border-image-source: linear-gradient(to left, rgba(4, 155, 236, 1), rgba(213, 0, 91, 1));
+}
+
+@media (max-width: 768px) {
+    .header__frame {
+        overflow: hidden;
+        box-shadow: 0 5px 5px rgba(100, 100, 100, .5);
+    }
+
+    .opened {
+        height: 390px;
+        transition: .3s;
+    }
+
+    .header {
+        height: 390px;
+        background: white !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .header__item {
+        height: 60px;
+        width: 100%;
+        color: rgb(39, 159, 195);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .header__item:hover {
+        background: linear-gradient(45deg, rgba(103, 0, 31, .7), rgba(34, 101, 163, .7));
+        color: white;
+        font-weight: 500;
+        border: 0;
+    }
+
+    .header__icon-container {
+        display: block;
+    }
+}
